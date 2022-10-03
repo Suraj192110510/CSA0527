@@ -1,0 +1,15 @@
+mysql> use rubin100;
+Database changed
+
+mysql> create table std (name char,id int,age int);
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> alter table std add batch int;
+Query OK, 0 rows affected (0.08 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> drop table std;
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> desc std;
+ERROR 1146 (42S02): Table 'rubin100.std' doesn't exist
