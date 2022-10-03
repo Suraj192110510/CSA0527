@@ -1,0 +1,12 @@
+mysql> create table s1 (serialorder int unique , registrednumber int primary key , gender char check(m or f));
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> desc s1;
++-----------------+---------+------+-----+---------+-------+
+| Field           | Type    | Null | Key | Default | Extra |
++-----------------+---------+------+-----+---------+-------+
+| serialorder     | int(11) | YES  | UNI | NULL    |       |
+| registrednumber | int(11) | NO   | PRI | NULL    |       |
+| gender          | char(1) | YES  |     | NULL    |       |
++-----------------+---------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
