@@ -1,0 +1,18 @@
+mysql> INSERT into s1 values ("suraj","510","m");
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into s1 values ("kiranmai","511","f");
+Query OK, 1 row affected (0.01 sec)
+
+mysql>  insert into s1 values ("kiran","513","m");
+Query OK, 1 row affected (0.06 sec)
+
+mysql> select*from s1;
++----------+-----+--------+
+| name     | id  | gender |
++----------+-----+--------+
+| suraj    | 510 | m      |
+| kiranmai | 511 | f      |
+| kiran    | 513 | m      |
++----------+-----+--------+
+3 rows in set (0.00 sec)
