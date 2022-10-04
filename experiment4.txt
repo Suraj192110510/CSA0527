@@ -1,0 +1,25 @@
+mysql> update s1 set id = 514 where name = "kiranmai";
+Query OK, 1 row affected (0.08 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select*from s1;
++----------+-----+--------+
+| name     | id  | gender |
++----------+-----+--------+
+| suraj    | 510 | m      |
+| kiran    | 513 | m      |
+| kiranmai | 514 | f      |
++----------+-----+--------+
+3 rows in set (0.00 sec)
+
+mysql>  delete from s1 where id=514;
+Query OK, 1 row affected (0.07 sec)
+
+mysql> select*from s1;
++-------+-----+--------+
+| name  | id  | gender |
++-------+-----+--------+
+| suraj | 510 | m      |
+| kiran | 513 | m      |
++-------+-----+--------+
+2 rows in set (0.00 sec)
