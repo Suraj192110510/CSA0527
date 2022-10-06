@@ -1,0 +1,27 @@
+mysql> select students.student_name,course.course_no from students,course where students.student_id = course.student_id;
++--------------+-----------+
+| student_name | course_no |
++--------------+-----------+
+| Shiva        |         3 |
++--------------+-----------+
+
+mysql> select students.student_name,course.course_no from students left join course on students.student_id = course.student_id;
++--------------+-----------+
+| student_name | course_no |
++--------------+-----------+
+| Kishore      |      NULL |
+| Kishan       |      NULL |
+| Shivam       |      NULL |
+| Shiva        |         3 |
++--------------+-----------+
+
+mysql> select students.student_name,course.course_no from students right join course on students.student_id = course.student_id;
++--------------+-----------+
+| student_name | course_no |
++--------------+-----------+
+| Shiva        |         3 |
+| NULL         |         2 |
+| NULL         |         5 |
+| NULL         |         1 |
+| NULL         |         4 |
++--------------+-----------+
